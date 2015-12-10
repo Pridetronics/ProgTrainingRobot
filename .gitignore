@@ -1,8 +1,5 @@
 # compiled code
 *.class
 
-# the entire tree under the bin directory
-bin\
-
 # all backup files
 *.*~ 
