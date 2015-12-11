@@ -32,11 +32,13 @@ public class DriveTeleop extends Command {
 
   // Called just before this Command runs the first time
   protected void initialize() {
-    Robot.drive.doTeleop();
+   
   }
 
   // Called repeatedly when this Command is scheduled to run
   protected void execute() {
+    // arcade method of the drive controller has a short timeout so we have to call it repeatedly
+    Robot.drive.doTeleop();
   }
 
   // Make this return true when this Command no longer needs to run execute()
