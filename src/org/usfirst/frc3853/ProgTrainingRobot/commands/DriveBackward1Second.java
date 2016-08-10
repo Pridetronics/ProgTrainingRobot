@@ -18,7 +18,7 @@ import org.usfirst.frc3853.ProgTrainingRobot.Robot;
  */
 public class DriveBackward1Second extends Command {
 
-  final private double DRIVE_SPEED = .25;
+  final private double DRIVE_SPEED = .5;
 
   public DriveBackward1Second() {
     // Use requires() here to declare subsystem dependencies
