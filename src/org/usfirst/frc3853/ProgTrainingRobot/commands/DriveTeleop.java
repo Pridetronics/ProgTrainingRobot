@@ -10,6 +10,8 @@
 
 package org.usfirst.frc3853.ProgTrainingRobot.commands;
 
+import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.Joystick.AxisType;
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc3853.ProgTrainingRobot.Robot;
 
@@ -17,6 +19,8 @@ import org.usfirst.frc3853.ProgTrainingRobot.Robot;
  *
  */
 public class DriveTeleop extends Command {
+  
+  private Joystick stick;
 
   public DriveTeleop() {
     // Use requires() here to declare subsystem dependencies
@@ -32,13 +36,19 @@ public class DriveTeleop extends Command {
 
   // Called just before this Command runs the first time
   protected void initialize() {
+    
+    stick = Robot.oi.getGamePad0();
+    
+    // remap getX() and getY() to the right stick on the gamepad 
+    stick.setAxisChannel(AxisType.kX, 4);
+    stick.setAxisChannel(AxisType.kY, 5);
    
   }
 
   // Called repeatedly when this Command is scheduled to run
   protected void execute() {
     // arcade method of the drive controller has a short timeout so we have to call it repeatedly
-    Robot.drive.doTeleop();
+    Robot.drive.doTeleop(stick);
   }
 
   // Make this return true when this Command no longer needs to run execute()
