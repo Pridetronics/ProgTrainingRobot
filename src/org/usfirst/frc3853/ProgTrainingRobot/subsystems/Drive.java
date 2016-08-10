@@ -35,16 +35,24 @@ public class Drive extends Subsystem {
   // here. Call these from Commands.
   public void doTeleop(Joystick stick) {
     SmartDashboard.putString("doTeleop", "RanIt");
-    robotDrive21.arcadeDrive(stick);
+    robotDrive21.arcadeDrive(stick,false);
   }
 
   public void driveForward(double speed) {
     // speed is 0 stopped to 1 full speed
+    speed = Math.abs(speed);
+    if(speed > 1){
+      speed = 1;
+      }
     robotDrive21.arcadeDrive(-speed, 0);
   }
 
   public void driveBackward(double speed) {
     // speed is 0 stopped to 1 full speed
+    speed = Math.abs(speed);
+    if(speed > 1){
+      speed = 1;
+      }
     robotDrive21.arcadeDrive(speed, 0);
   }
 
