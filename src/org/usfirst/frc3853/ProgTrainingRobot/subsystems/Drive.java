@@ -42,7 +42,7 @@ public class Drive extends Subsystem {
   // Put methods for controlling this subsystem
   // here. Call these from Commands.
   public void doTeleop(Joystick stick) {
-    robotDrive21.arcadeDrive(stick,false);
+    robotDrive21.arcadeDrive(stick,true);
     SmartDashboard.putNumber("Left Encoder", this.getLeftDistance());
     SmartDashboard.putNumber("Right Encoder", this.getRightDistance());
   }
