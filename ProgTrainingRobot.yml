@@ -231,7 +231,7 @@ Children:
           validators: null
           value:
           - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: speed,
-            type: double, value: '.4'}
+            type: double, value: '.45'}
           - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: degrees,
             type: double, value: '90'}
         Button: !!robotbuilder.data.properties.ChoicesProperty
@@ -264,7 +264,7 @@ Children:
           validators: null
           value:
           - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: speed,
-            type: double, value: '.4'}
+            type: double, value: '.55'}
           - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: degrees,
             type: double, value: '90'}
         Button: !!robotbuilder.data.properties.ChoicesProperty
@@ -439,9 +439,9 @@ Children:
         validators: null
         value:
         - !!robotbuilder.data.properties.ParameterSet
-          name: 90@60%
+          name: 90@55%
           parameters:
-          - {name: speed, type: double, value: '.6'}
+          - {name: speed, type: double, value: '.55'}
           - {name: degrees, type: double, value: '90'}
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
@@ -464,9 +464,9 @@ Children:
         validators: null
         value:
         - !!robotbuilder.data.properties.ParameterSet
-          name: 90@60%
+          name: 90@45%
           parameters:
-          - {name: speed, type: double, value: '.6'}
+          - {name: speed, type: double, value: '.45'}
           - {name: degrees, type: double, value: '90'}
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
