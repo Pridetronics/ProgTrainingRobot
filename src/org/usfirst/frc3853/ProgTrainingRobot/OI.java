@@ -62,9 +62,9 @@ public class OI {
         gamePad0 = new Joystick(0);
         
         buttonB = new JoystickButton(gamePad0, 2);
-        buttonB.whenPressed(new TurnRightDegrees(.6, 90));
+        buttonB.whenPressed(new TurnRightDegrees(.4, 90));
         buttonX = new JoystickButton(gamePad0, 3);
-        buttonX.whenPressed(new TurnLeftDegrees(.6, 90));
+        buttonX.whenPressed(new TurnLeftDegrees(.4, 90));
         buttonA = new JoystickButton(gamePad0, 1);
         buttonA.whenPressed(new DriveBackwardsDistance(.6, 12));
         buttonY = new JoystickButton(gamePad0, 4);

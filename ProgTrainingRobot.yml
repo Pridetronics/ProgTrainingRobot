@@ -231,7 +231,7 @@ Children:
           validators: null
           value:
           - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: speed,
-            type: double, value: '.6'}
+            type: double, value: '.4'}
           - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: degrees,
             type: double, value: '90'}
         Button: !!robotbuilder.data.properties.ChoicesProperty
@@ -264,7 +264,7 @@ Children:
           validators: null
           value:
           - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: speed,
-            type: double, value: '.6'}
+            type: double, value: '.4'}
           - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: degrees,
             type: double, value: '90'}
         Button: !!robotbuilder.data.properties.ChoicesProperty
