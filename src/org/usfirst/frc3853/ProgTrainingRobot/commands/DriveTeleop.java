@@ -37,7 +37,8 @@ public class DriveTeleop extends Command {
   // Called just before this Command runs the first time
   protected void initialize() {
     
-    stick = Robot.oi.getGamePad0();
+    stick = Robot.oi.getSlaveGamePad();
+    
     
     // remap getX() and getY() to the right stick on the gamepad 
     stick.setAxisChannel(AxisType.kX, 4);
