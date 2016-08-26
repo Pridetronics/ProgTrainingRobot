@@ -70,7 +70,7 @@ public class OI {
         buttonB = new JoystickButton(masterGamePad, 2);
         buttonB.whenPressed(new TurnRightDegrees(.55, 90));
         buttonX = new JoystickButton(masterGamePad, 3);
-        buttonX.whenPressed(new TurnLeftDegrees(.45, 90));
+        buttonX.whenPressed(new TurnLeftDegrees(.55, 90));
         buttonA = new JoystickButton(masterGamePad, 1);
         buttonA.whenPressed(new DriveBackwardsDistance(.6, 12));
         buttonY = new JoystickButton(masterGamePad, 4);
