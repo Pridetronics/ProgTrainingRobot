@@ -2,6 +2,6 @@
 *.*~ 
 
 # everything under these directories
-/bin/
-/build/
-/dist/
+bin/
+build/
+dist/
