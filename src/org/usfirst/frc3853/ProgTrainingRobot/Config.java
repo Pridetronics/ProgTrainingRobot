@@ -17,4 +17,9 @@ public class Config {
   //default to arcade drive
   public DriveType driveType = DriveType.ARCADE; 
 
+  // accelerometer interface constants
+  public static int G_SAMPLES = 10;
+  public static double G_SLOP = 0.05;
+  public static double G_ON_EDGE = 0.6;
+  
 }
