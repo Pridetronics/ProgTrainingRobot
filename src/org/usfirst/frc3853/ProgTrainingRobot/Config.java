@@ -5,21 +5,21 @@ public class Config {
   public static double DRIVE_ENCODER_TICKS_PER_REVOLUTION = 90;
   public static double DRIVE_WHEEL_DIAMETER = 4;
   public static double DRIVE_TRACK = 15;
-  public static double DRIVE_ENCODER_DISTANCE_PER_TICK = Math.PI * DRIVE_WHEEL_DIAMETER / DRIVE_ENCODER_TICKS_PER_REVOLUTION;
+  public static double DRIVE_ENCODER_DISTANCE_PER_TICK = Math.PI * DRIVE_WHEEL_DIAMETER
+      / DRIVE_ENCODER_TICKS_PER_REVOLUTION;
   public static double DRIVE_ENCODER_DISTANCE_PER_DEGREE = Math.PI * DRIVE_TRACK / 360;
-  
+
   // enum and variable to switch drive from arcade to tank
-  public enum DriveType{
-    ARCADE,
-    TANK
+  public enum DriveType {
+    ARCADE, TANK
   }
-  
-  //default to arcade drive
-  public DriveType driveType = DriveType.ARCADE; 
+
+  // default to arcade drive
+  public DriveType driveType = DriveType.ARCADE;
 
   // accelerometer interface constants
   public static int G_SAMPLES = 10;
   public static double G_SLOP = 0.05;
   public static double G_ON_EDGE = 0.6;
-  
+
 }

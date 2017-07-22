@@ -59,11 +59,12 @@ public class OurAccelerometer extends Subsystem {
     for ( int i = 0; i < Config.G_SAMPLES; i++ ) {
       avg += samples[i];
     }
-
+    avg = avg / Config.G_SAMPLES;
+    
     // only update dashboard when G is recalculated
     SmartDashboard.putNumber("G", avg);
 
-    return avg / Config.G_SAMPLES;
+    return avg;
   }
 
   public boolean weAreLevel() {
